@@ -115,8 +115,8 @@
 .progress-card__track::before {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 36px;
+  right: 36px;
   top: 17px;
   height: 2px;
   background: linear-gradient(to right, var(--teal) 0 75%, #d7dbe1 75%);

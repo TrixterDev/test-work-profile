@@ -1,48 +1,219 @@
 @media (max-width: 700px) {
-  .site-header__inner { height: 61px; margin: 0 16px; }
-  .brand__logo { width: 108px; }
-  .site-header__nav, .site-header__assistance, .page-intro { display: none; }
-  .site-header__mobile-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; font-size: 12px; }
-  .site-header__mobile-actions .avanti-button { border: 0; background: none; color: var(--teal); }
-  .badge--bell { position: relative; left: -18px; top: -13px; margin-right: -20px; border: 2px solid white; }
-  .page-shell { margin: 0 16px; padding: 16px 0 calc(100px + env(safe-area-inset-bottom)); }
-  .profile-layout { display: flex; flex-direction: column; gap: 20px; }
-  .profile-layout > *, .profile-layout__left, .profile-layout__right { width: 100%; }
-  .profile-layout__summary, .consultant-card { display: none; }
-  .profile-layout__left { display: grid; gap: 20px; }
-  .profile-layout__right { display: grid; }
-  .progress-card { padding: 15px 15px 18px; }
-  .card-heading { font-size: 10px; }
-  .progress-card__track { margin: 18px 0 0; }
-  .progress-card__track::before { left: 16px; right: 16px; top: 10px; }
-  .progress-step { width: 48px; gap: 6px; font-size: 10px; }
-  .progress-step__circle { width: 22px; height: 22px; border-width: 1px; }
-  .progress-step__circle .avanti-icon { width: 13px; height: 13px; }
-  .personal-card, .security-card { padding: 16px; }
-  .card-title-row { margin-bottom: 17px; }
-  .card-title-row .avanti-button { min-width: 109px; padding: 8px 9px; font-weight: 500; }
-  .data-row { min-height: 29px; font-size: 13px; }
-  .data-row > span { flex: 0 0 44%; }
-  .data-row strong { flex: 1; }
-  .iban-label { margin-top: 3px; }
-  .security-card__heading { padding-bottom: 17px; }
-  .security-action { display: grid; gap: 9px; padding: 16px 0; }
-  .security-action .avanti-button { width: 100%; min-height: 38px; }
-  .email-verification { grid-template-columns: 1fr; gap: 12px; padding: 15px; margin-top: 16px; }
-  .email-verification__title { grid-column: 1; }
-  .verification-pill { margin-left: auto; }
-  .email-verification .avanti-button { width: 100%; }
-  .steps-card__heading { padding: 16px; min-height: 64px; }
-  .steps-card__heading h2 { font-size: 12px; }
-  .step-row { height: 69px; padding: 0 16px; gap: 12px; }
-  .step-row__icon { flex-basis: 36px; width: 36px; height: 36px; }
-  .step-row__description { font-size: 12px; }
-  .step-row__description small { font-size: 11px; }
-  .steps-card__bars { padding: 10px 16px 16px; }
-  .mobile-navigation { display: flex; justify-content: space-around; align-items: center; gap: 1px; position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; min-height: calc(70px + env(safe-area-inset-bottom)); padding: 7px 12px calc(7px + env(safe-area-inset-bottom)); border-top: 2px solid var(--teal); background: white; }
-  .mobile-navigation .avanti-button { display: flex; flex-direction: column; flex: 1; gap: 3px; padding: 6px 2px; background: none; color: #263341; font-size: 11px; }
-  .mobile-navigation .avanti-button.is-active { color: var(--teal-dark); }
-  .mobile-navigation .avanti-button--primary { flex: 1.2; background: var(--teal); color: white; }
-  .notice { bottom: calc(85px + env(safe-area-inset-bottom)); }
+  .security-action {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .security-action .avanti-button {
+    width: 100%;
+  }
+  .site-header__inner {
+    height: 61px;
+    margin: 0 16px;
+  }
+  .brand__logo {
+    width: 108px;
+  }
+  .site-header__nav,
+  .site-header__assistance,
+  .page-intro {
+    display: none;
+  }
+  .site-header__mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    font-size: 12px;
+  }
+  .site-header__mobile-actions .avanti-button {
+    border: 0;
+    background: none;
+    color: var(--teal);
+  }
+  .badge--bell {
+    position: relative;
+    left: -25px;
+    top: -9px;
+    margin-right: -20px;
+    border: 2px solid white;
+  }
+  .page-shell {
+    margin: 0 16px;
+    padding: 16px 0 calc(100px + env(safe-area-inset-bottom));
+  }
+  .profile-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile-layout > *,
+  .profile-layout__left,
+  .profile-layout__right {
+    width: 100%;
+  }
+  .profile-layout__summary,
+  .consultant-card {
+    display: none;
+  }
+  .profile-layout__left {
+    display: grid;
+    gap: 20px;
+  }
+  .profile-layout__right {
+    display: grid;
+  }
+  .progress-card {
+    padding: 15px 15px 18px;
+  }
+  .card-heading {
+    font-size: 10px;
+  }
+  .progress-card__track {
+    margin: 18px 0 0;
+  }
+  .progress-card__track::before {
+    left: 24px;
+    right: 24px;
+    top: 10px;
+  }
+  .progress-step {
+    width: 48px;
+    gap: 6px;
+    font-size: 10px;
+  }
+  .progress-step__circle {
+    width: 22px;
+    height: 22px;
+    border-width: 1px;
+  }
+  .progress-step__circle .avanti-icon {
+    width: 13px;
+    height: 13px;
+  }
+  .personal-card,
+  .security-card {
+    padding: 16px;
+  }
+  .card-title-row {
+    margin-bottom: 17px;
+  }
+  .card-title-row .avanti-button {
+    min-width: 109px;
+    padding: 8px 9px;
+    font-weight: 500;
+  }
+  .data-row {
+    min-height: 29px;
+    font-size: 13px;
+  }
+  .data-row > span {
+    flex: 0 0 44%;
+  }
+  .data-row strong {
+    flex: 1;
+  }
+  .iban-label {
+    margin-top: 3px;
+  }
+  .security-card__heading {
+    padding-bottom: 17px;
+  }
+  .security-action .avanti-button {
+    width: 100%;
+    min-height: 38px;
+  }
+  .email-verification {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px;
+    margin-top: 16px;
+  }
+  .email-verification__title {
+    grid-column: 1;
+  }
+  .verification-pill {
+    margin-left: auto;
+  }
+  .email-verification .avanti-button {
+    width: 100%;
+  }
+  .steps-card__heading {
+    padding: 16px;
+    min-height: 64px;
+  }
+  .steps-card__heading h2 {
+    font-size: 12px;
+  }
+  .step-row {
+    height: 69px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .step-row__icon {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+  .step-row__description {
+    font-size: 12px;
+  }
+  .step-row__description small {
+    font-size: 11px;
+  }
+  .steps-card__bars {
+    padding: 10px 16px 16px;
+  }
+  .mobile-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    min-height: calc(70px + env(safe-area-inset-bottom));
+    padding: 7px 12px calc(7px + env(safe-area-inset-bottom));
+    border-top: 2px solid var(--teal);
+    background: white;
+  }
+  .mobile-navigation .avanti-button {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3px;
+    padding: 6px 2px;
+    background: none;
+    color: #263341;
+    font-size: 11px;
+  }
+  .mobile-navigation .avanti-button.is-active {
+    color: var(--teal-dark);
+  }
+  .mobile-navigation .avanti-button--primary {
+    flex: 1.2;
+    background: var(--teal);
+    color: white;
+  }
+  .notice {
+    bottom: calc(85px + env(safe-area-inset-bottom));
+  }
 }
-@media (max-width: 355px) { .progress-step { width: 40px; font-size: 9px; } .mobile-navigation .avanti-button { font-size: 10px; } }
+@media (max-width: 355px) {
+  .progress-step {
+    width: 40px;
+    font-size: 9px;
+  }
+  .mobile-navigation .avanti-button {
+    font-size: 10px;
+  }
+  .progress-card__track::before {
+    left: 20px;
+    right: 20px;
+  }
+}

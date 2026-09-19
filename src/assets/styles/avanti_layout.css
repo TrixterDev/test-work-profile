@@ -115,8 +115,8 @@
 .progress-card__track::before {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 36px;
+  right: 36px;
   top: 17px;
   height: 2px;
   background: linear-gradient(to right, var(--teal) 0 75%, #d7dbe1 75%);
@@ -169,7 +169,7 @@
   font-size: 13px;
 }
 .data-row > span {
-  color: #71717a;
+  color: #697380;
 }
 .data-row strong {
   text-align: right;
@@ -189,7 +189,7 @@
 }
 .iban-label {
   margin: 5px 0 6px;
-  color: #71717a;
+  color: #697380;
   font-size: 13px;
 }
 .iban-value {
@@ -237,7 +237,7 @@
 }
 .security-action p,
 .email-verification p {
-  color: #71717a;
+  color: #697380;
   font-size: 13px;
   line-height: 1.45;
 }
@@ -426,9 +426,28 @@
   box-shadow: 0 9px 20px #122d3970;
   position: relative;
 }
+.consultant-card__avatar {
+  position: relative;
+  display: block;
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+}
+.consultant-card__avatar::after {
+  content: '';
+  position: absolute;
+  right: -7px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--teal);
+}
 .avatar--consultant {
   width: 60px;
   height: 60px;
+  border: 0;
   background: linear-gradient(135deg, #9fa5ab, #d9bba1);
   color: #172732;
 }
