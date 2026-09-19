@@ -5,7 +5,7 @@
   color: #1a2332;
   background: #f8fbfe;
   font-synthesis: none;
-  --teal: #0f0f0f;
+  --teal: #2491aa;
   --teal-dark: #147a98;
   --teal-pale: #ecf7fa;
   --line: #e1e5ec;
@@ -110,6 +110,7 @@ p {
   font-size: 11px;
   font-weight: 700;
   border: 2px solid white;
+  object-fit: cover;
 }
 .avatar--small {
   width: 36px;

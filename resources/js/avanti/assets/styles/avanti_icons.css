@@ -1,0 +1,70 @@
+.avanti-icon {
+  display: inline-block;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+.avanti-icon--16 {
+  width: 16px;
+  height: 16px;
+}
+.avanti-icon--17 {
+  width: 17px;
+  height: 17px;
+}
+.avanti-icon--18 {
+  width: 18px;
+  height: 18px;
+}
+.avanti-icon--19 {
+  width: 19px;
+  height: 19px;
+}
+.avanti-icon--home {
+  color: #71717a;
+  mask-image: url('/images/icons/avanti-home.svg');
+}
+.avanti-icon--document {
+  color: #71717a;
+  mask-image: url('/images/icons/avanti-document.svg');
+}
+.avanti-icon--user {
+  mask-image: url('/images/icons/avanti-user.svg');
+}
+.avanti-icon--chat {
+  mask-image: url('/images/icons/avanti-chat.svg');
+}
+.avanti-icon--bell {
+  mask-image: url('/images/icons/avanti-bell.svg');
+}
+.avanti-icon--check {
+  mask-image: url('/images/icons/avanti-check.svg');
+}
+.avanti-icon--arrow {
+  mask-image: url('/images/icons/avanti-arrow.svg');
+}
+.avanti-icon--chevron {
+  mask-image: url('/images/icons/avanti-chevron.svg');
+}
+.avanti-icon--upload {
+  mask-image: url('/images/icons/avanti-upload.svg');
+}
+.avanti-icon--pen {
+  mask-image: url('/images/icons/avanti-pen.svg');
+}
+.avanti-icon--shield {
+  mask-image: url('/images/icons/avanti-shield.svg');
+}
+.avanti-icon--chart {
+  mask-image: url('/images/icons/avanti-chart.svg');
+}
+.avanti-icon--copy {
+  mask-image: url('/images/icons/avanti-copy.svg');
+}
+.avanti-icon--question {
+  mask-image: url('/images/icons/avanti-question.svg');
+}

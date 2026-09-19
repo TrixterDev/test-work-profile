@@ -5,4 +5,4 @@ import './assets/styles/avanti_icons.css'
 import './assets/styles/avanti_layout.css'
 import './assets/styles/avanti_mobile.css'
 
-createApp(AvantiApp).mount('#app')
+createApp(AvantiApp).mount('#avanti-profile')
